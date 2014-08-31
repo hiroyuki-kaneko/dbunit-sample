@@ -1,7 +1,5 @@
 package com.nekosacpe.sample.db;
 
-import java.io.Closeable;
-import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -13,11 +11,11 @@ public class SampleDB {
 
 	private static final String DEFAULT_DB_DRIVER = "com.mysql.jdbc.Driver";
 
-	private static final String PROPERTY_DB_DRIVER = "com.nekoscape.db.driver";
+	public static final String PROPERTY_DB_DRIVER = "com.nekoscape.db.driver";
 
 	private static final String DEFAULT_JDBC_URI = "jdbc:mysql://localhost/test";
 
-	private static final String PROPERTY_JDBC_URI = "com.nekoscape.db.uri";
+	public static final String PROPERTY_JDBC_URI = "com.nekoscape.db.uri";
 
 	private static final String SQL_SELECT_ALL = "SELECT * FROM TEST";
 
